@@ -1,0 +1,43 @@
+{
+  "id": "E015",
+  "title": "카르노 효율 상한 계산기",
+  "inputs_text": "고온 열원 T_h [K], 저온 열원 T_c [K]",
+  "formula": "η_C = 1 − T_c / T_h",
+  "output_text": "카르노 열효율 η_C [%]",
+  "assumptions": "T_h>T_c>0 K. 두 열원 사이 가역 열기관의 이론 상한이며 실제 장치 효율이 아니다. 섭씨를 그대로 나누지 않는다.",
+  "purpose": "카르노 효율 계산 / 열기관 이론 상한 확인",
+  "sources": [
+    {
+      "label": "OpenStax · The Carnot Cycle",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle"
+    }
+  ],
+  "slug": "eng-carnot-efficiency",
+  "category": "열",
+  "result_label": "카르노 효율 상한 η_C",
+  "result_dimension": "fraction",
+  "fields": [
+    {
+      "key": "th",
+      "label": "고온 열원 절대온도 T_h",
+      "dimension": "temperature",
+      "example": 600,
+      "constraint": "positive",
+      "display_unit": "K",
+      "display_value": "600"
+    },
+    {
+      "key": "tc",
+      "label": "저온 열원 절대온도 T_c",
+      "dimension": "temperature",
+      "example": 300,
+      "constraint": "positive",
+      "display_unit": "K",
+      "display_value": "300"
+    }
+  ],
+  "site": "https://nanalab.kr/eng-carnot-efficiency/",
+  "repository": "https://github.com/NaNaCompany/eng-carnot-efficiency",
+  "condition": "",
+  "output_unit": "percent"
+}
